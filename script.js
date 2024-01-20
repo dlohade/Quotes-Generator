@@ -1,4 +1,3 @@
-// Define an array of quotes
 const quotes = [
     "The only way to do great work is to love what you do. - Steve Jobs",
     "Innovation distinguishes between a leader and a follower. - Steve Jobs",
@@ -8,12 +7,10 @@ const quotes = [
     "Believe you can and you're halfway there. -Theodore Roosevelt"
 ];
 
-// Function to generate a random quote
 function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     const quoteText = quotes[randomIndex];
     document.getElementById('quote-text').textContent = quoteText;
 }
 
-// Initial quote generation
 generateQuote();
